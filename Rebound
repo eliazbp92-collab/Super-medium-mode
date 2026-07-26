@@ -27,7 +27,7 @@ local entity = Spawner:Create({
 		Values = {7.5, 15, 0.1, 2} -- Magnitude, Roughness, FadeIn, FadeOut
 	},
 	Movement = {
-		Speed = 180,
+		Speed = 45,
 		Delay = 3,
 		Reversed = true
 	},
@@ -155,9 +155,6 @@ end)
 ---====== Run entity ======---
  
 entity:Run(true)
- 
-game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/eoyoustme/Fragmentend-Reiginited/refs/heads/main/Rebound1"))()
  
         end)
     end
