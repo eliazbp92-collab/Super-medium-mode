@@ -1,5 +1,5 @@
 local rng = Random.new()
-local ai = rng:NextInteger(35, 1050)
+local ai = rng:NextInteger(35, 45)
 
 function light(tim, color0, color1)
 	local tweenservice = game:GetService("TweenService")
@@ -35,8 +35,8 @@ local Spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/Regul
 
 local entity = Spawner:Create({
 	Entity = {
-		Name = "Rebound2",
-		Asset = "https://github.com/eliazbp92-collab/Super-medium-mode/raw/main/Sodund.rbxm",
+		Name = "Rebound3",
+		Asset = "https://github.com/eliazbp92-collab/Super-medium-mode/blob/main/Sodund.rbxm?raw=true",
 		HeightOffset = 1
 	},
 	Lights = {
@@ -93,7 +93,7 @@ entity:SetCallback("OnSpawned", function()
 	light(2, Color3.fromRGB(85, 170, 255), Color3.fromRGB(65, 138, 255))
 
 	-- Tìm Rebound an toàn bằng WaitForChild để tránh lỗi nil
-	local reboundModel = game.Workspace:WaitForChild("Rebound2", 5)
+	local reboundModel = game.Workspace:WaitForChild("Rebound3", 5)
 	local reboundRoot = reboundModel and reboundModel:WaitForChild("Root", 3)
 
 	local function GetGitSound(GithubSnd, SoundName)
@@ -121,7 +121,7 @@ end)
 entity:SetCallback("OnStartMoving", function()
 	print("Entity has started moving")
                    	game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/eliazbp92-collab/Super-medium-mode/refs/heads/main/Rebound4"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/eoyoustme/Endless-Doors/refs/heads/main/Rebound4"))()
 end)
 
 entity:SetCallback("OnEnterRoom", function(room: Model, firstTime: boolean)
@@ -131,7 +131,7 @@ entity:SetCallback("OnEnterRoom", function(room: Model, firstTime: boolean)
 			local RunService = game:GetService("RunService")
 			local TweenService = game:GetService("TweenService")
 
-			local entityModel = workspace:FindFirstChild("Rebound2")
+			local entityModel = workspace:FindFirstChild("Rebound3")
 			local entityRoot = entityModel and (entityModel:FindFirstChild("HumanoidRootPart") or entityModel:FindFirstChildWhichIsA("BasePart")) 
 
 			if entityRoot then
