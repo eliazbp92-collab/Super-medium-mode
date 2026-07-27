@@ -1,5 +1,5 @@
 local rng = Random.new()
-local ai = rng:NextInteger(35, 1050)
+local ai = rng:NextInteger(35, 45)
 
 function light(tim, color0, color1)
 	local tweenservice = game:GetService("TweenService")
