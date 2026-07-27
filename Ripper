@@ -203,7 +203,3 @@ tween:Create(game.Lighting.MainColorCorrection, TweenInfo.new(9), {Saturation = 
 local TweenService = game:GetService("TweenService")
 local TW = TweenService:Create(game.Lighting.MainColorCorrection, TweenInfo.new(1),{TintColor = Color3.fromRGB(255, 255, 255)})
 TW:Play()
- 
-        end)
-    end
-end)()
