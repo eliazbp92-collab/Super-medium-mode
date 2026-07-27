@@ -270,7 +270,7 @@ end)
         print("Entity has damaged the player")
     end
 end)
- 
+
 --[[
  
 DEVELOPER NOTE:
@@ -284,4 +284,4 @@ end)
  
 ---====== Run entity ======---
  
-entity:Run()
+entity:Run(true)
