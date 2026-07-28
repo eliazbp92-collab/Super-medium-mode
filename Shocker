@@ -6,7 +6,7 @@ local character = player.Character or player.CharacterAdded:Wait()
 local humanoid = character:WaitForChild("Humanoid")
 
 local function spawnShocker()
-    local shockerModel = game:GetObjects("rbxassetid://11547803978")
+    local shockerModel = game:GetObjects("rbxassetid://11547803978")[1]
     shockerModel.PrimaryPart = shockerModel:FindFirstChild("HumanoidRootPart") or shockerModel:FindFirstChildWhichIsA("Part")
     
     local camera = Workspace.CurrentCamera
