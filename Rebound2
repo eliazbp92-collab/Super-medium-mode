@@ -187,7 +187,7 @@ end)
 entity:SetCallback("OnDamagePlayer", function(newHealth: number)
 	if newHealth <= 0 then
 		print("Entity has killed the player")
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/eoyoustme/Endless-Doors/refs/heads/main/Rebound%20jumpscare"))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Timofey2339/Depth-doors-model/refs/heads/main/Jumpscare/Rebound%20Jumpscare.lua"))()
 	else
 		print("Entity has damaged the player")
 	end
